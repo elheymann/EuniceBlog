@@ -7,12 +7,14 @@
 </head>
 <body>
 <nav th:replace="partials/navbar :: navbar">
-    <form action="/posts/show" method="post" th:object="${post}">
-        Title:
-        <input th:field="*{title}"/>
-        <br/>
-        Description:
-        <input th:field="*{description}"/>
-</nav>
+    </nav>
+<form action="/posts/show" method="post" th:object="${post}">
+    Title:
+    <input th:field="*{title}"/>
+    <br/>
+    Description:
+    <input th:field="*{description}"/>
+    </form>
+
 </body>
 </html>

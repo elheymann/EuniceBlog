@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
     <head th:replace="partials/header :: header('create')">
     <meta charset="UTF-8"/>
     <title>Create</title>
@@ -16,7 +15,7 @@
     Description:
     <input th:field="*{description}"/>
     <br/>
-    <input type="submit"/>
+    <input class="btn btn-success" type="submit"/>
 </form>
 </body>
 </html>
