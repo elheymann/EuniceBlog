@@ -9,7 +9,7 @@
 <nav th:replace="partials/navbar :: navbar">
 
 </nav>
-<form th:action="@{'/posts/' + ${post.id} +'/edit'}" method="post" th:object="${post}">
+<form class="text-center" th:action="@{'/posts/' + ${post.id} +'/edit'}" method="post" th:object="${post}">
 
 <div class="form-group">
 
@@ -32,6 +32,6 @@
 
 <button type="submit" class="btn btn-success">Update Post</button>
 
-</form>
+    </form>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <body>
 <nav th:replace="partials/navbar :: navbar">
 </nav>
-<form action="/posts/create" method="post" th:object="${post}">
+<form class="text-center" action="/posts/create" method="post" th:object="${post}" >
     Title:
     <input th:field="*{title}"/>
     <br/>

@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-    <head th:replace="partials/header :: header('show')">
-    <meta charset="UTF-8" />
+<head th:replace="partials/header :: header('show')">
+    <meta charset="UTF-8"/>
     <title>Show</title>
 </head>
 <body>
 <nav th:replace="partials/navbar :: navbar">
-    </nav>
-<form action="/posts/show" method="post" th:object="${post}">
+</nav>
+<form class="text-center" action="/posts/show" method="post" th:object="${post}">
     Title:
     <input th:field="*{title}"/>
     <br/>
     Description:
     <input th:field="*{description}"/>
-    </form>
-
+</form>
 </body>
 </html>
