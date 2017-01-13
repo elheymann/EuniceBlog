@@ -83,13 +83,12 @@ public class HibernatePostsDao implements Posts  {
 
     @Override
 
-    public void deletePost(int postId) {
-
-        Post postToDelete = singlePost(postId);
+    public void deletePost(int id) {
+        Post post = singlePost(id);
 
         Transaction tx = session.beginTransaction();
 
-        session.delete(postToDelete);
+        session.delete(post);
 
         tx.commit();
 

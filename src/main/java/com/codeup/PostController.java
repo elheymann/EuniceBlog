@@ -94,11 +94,11 @@ public class PostController {
     }
 
 
-    @PostMapping("/{id}/delete")
+    @GetMapping("/{id}/delete")
 
-    public String deletePost(@ModelAttribute Post postToDelete) {
+    public String deletePost(@PathVariable int id) {
 
-        DaoFactory.getPostDao().deletePost(postToDelete.getId());
+        DaoFactory.getPostDao().deletePost(id);
 
         return "redirect:/posts";
 

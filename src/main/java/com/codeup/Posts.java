@@ -8,6 +8,5 @@ public interface Posts {
     void insert(Post post);
     Post singlePost(int postId);
     void updatePost(Post post);
-    void deletePost(int postId);
-
+    void deletePost(int id);
 }

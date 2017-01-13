@@ -31,6 +31,7 @@
 </div>
 
 <button type="submit" class="btn btn-success">Update Post</button>
+<a th:href="@{'/posts/' + ${post.id} +'/delete'}" type="submit" class="btn btn-danger">Delete</a>
 
     </form>
 </body>
